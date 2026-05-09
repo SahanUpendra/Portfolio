@@ -1,4 +1,23 @@
 # Portfolio
-My carrier portfolio(web) present to inquires 
-This repo holds my first web based portfolio that I began to bulid in October,2023
-This project gonna be a simple website with stuff that I tried with my entry level knowladge of coding 
+
+A clean personal portfolio website built with React and Vite.
+
+## Sections
+
+- Hero
+- About
+- Skills
+- Projects
+- PPW Portfolio
+- Contact
+- Footer
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Edit placeholder content in `src/data/portfolio.js` and section components in
+`src/components`.
