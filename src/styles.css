@@ -284,10 +284,14 @@ h3 {
   pointer-events: none;
 }
 
-.hero-visual img {
+.hero-visual .profile-image {
   position: relative;
   width: 100%;
+  aspect-ratio: 1;
   border-radius: 8px;
+  background: var(--bg-panel-soft);
+  object-fit: cover;
+  object-position: center;
 }
 
 .split-section {

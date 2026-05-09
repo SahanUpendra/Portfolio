@@ -27,6 +27,11 @@ Edit placeholder content in `src/data/portfolioData.js` and section components i
 Place the real CV at `public/Sahan_Upendra_CV.pdf`. The Download CV buttons
 already point to that path.
 
+To use a LinkedIn profile picture, copy the direct image address from LinkedIn
+and paste it into `profile.image.src` in `src/data/portfolioData.js`. You can
+also place a local image in `public` and use a path such as
+`/sahan-upendra-profile.jpg`.
+
 ## Deploy
 
 For Netlify, use `npm run build` as the build command and `dist` as the publish

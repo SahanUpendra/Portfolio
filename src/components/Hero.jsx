@@ -1,3 +1,4 @@
+import ProfileImage from './ProfileImage.jsx';
 import { profile } from '../data/portfolioData.js';
 
 function Hero() {
@@ -30,7 +31,7 @@ function Hero() {
         </div>
 
         <div className="hero-visual" aria-label="Portfolio profile visual">
-          <img src="/profile-placeholder.svg" alt="Abstract profile placeholder" />
+          <ProfileImage image={profile.image} />
         </div>
       </div>
     </section>

@@ -8,6 +8,11 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/sahanupendra2000',
   github: 'https://github.com',
   cv: '/Sahan_Upendra_CV.pdf',
+  image: {
+    src: '',
+    fallback: '/profile-placeholder.svg',
+    alt: 'Sahan Upendra profile picture',
+  },
 };
 
 export const navLinks = [
