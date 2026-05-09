@@ -1,20 +1,30 @@
+import { profile } from '../data/portfolioData.js';
+
 function Hero() {
   return (
     <section id="hero" className="hero section">
       <div className="container hero-grid">
         <div className="hero-content">
-          <p className="eyebrow">Personal Portfolio</p>
-          <h1>Your Name</h1>
+          <p className="eyebrow">Portfolio</p>
+          <h1>{profile.name}</h1>
+          <p className="hero-headline">{profile.headline}</p>
           <p className="hero-copy">
-            I build clean, responsive web experiences with a focus on simple
-            structure, readable code, and thoughtful design.
+            {profile.intro}
           </p>
           <div className="hero-actions" aria-label="Hero actions">
             <a className="button primary" href="#projects">
               View Projects
             </a>
-            <a className="button secondary" href="#contact">
-              Contact Me
+            <a className="button secondary" href={profile.cv} download>
+              Download CV
+            </a>
+            <a
+              className="button ghost"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
             </a>
           </div>
         </div>

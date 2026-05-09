@@ -1,17 +1,18 @@
-import SkillBadge from './SkillBadge.jsx';
-import { skills } from '../data/portfolio.js';
+import SectionHeader from './SectionHeader.jsx';
+import SkillGroupCard from './SkillGroupCard.jsx';
+import { skillGroups } from '../data/portfolioData.js';
 
 function Skills() {
   return (
     <section id="skills" className="section section-muted">
       <div className="container">
-        <div className="section-heading">
-          <p className="eyebrow">Skills</p>
-          <h2>Tools and technologies</h2>
-        </div>
-        <div className="skills-list" aria-label="Skills list">
-          {skills.map((skill) => (
-            <SkillBadge key={skill} label={skill} />
+        <SectionHeader
+          eyebrow="Skills"
+          title="Engineering, creative operations, and professional practice"
+        />
+        <div className="skills-grid" aria-label="Grouped skills">
+          {skillGroups.map((group) => (
+            <SkillGroupCard key={group.title} {...group} />
           ))}
         </div>
       </div>

@@ -1,4 +1,6 @@
-function ProjectCard({ title, description, tags, link }) {
+import TagList from './TagList.jsx';
+
+function ProjectCard({ title, description, tech }) {
   return (
     <article className="project-card">
       <div>
@@ -6,12 +8,7 @@ function ProjectCard({ title, description, tags, link }) {
         <p>{description}</p>
       </div>
       <div className="project-card-footer">
-        <div className="tag-list" aria-label={`${title} tags`}>
-          {tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
-        <a href={link}>View Details</a>
+        <TagList items={tech} ariaLabel={`${title} technologies`} />
       </div>
     </article>
   );

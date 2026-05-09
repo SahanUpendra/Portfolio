@@ -3,7 +3,8 @@ import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
 import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
-import PPWPortfolio from './components/PPWPortfolio.jsx';
+import FantasyArchitect from './components/FantasyArchitect.jsx';
+import CareerVision from './components/CareerVision.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -16,7 +17,8 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <PPWPortfolio />
+        <FantasyArchitect />
+        <CareerVision />
         <Contact />
       </main>
       <Footer />
